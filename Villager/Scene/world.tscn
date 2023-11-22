@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bpykpepl4rltk"]
+[gd_scene load_steps=10 format=3 uid="uid://bpykpepl4rltk"]
 
 [ext_resource type="Texture2D" uid="uid://2v7r5qyyynpn" path="res://Mystic Woods Asset/tilesets/plains.png" id="1_mxoxf"]
 [ext_resource type="Texture2D" uid="uid://cm0onrovdhkkk" path="res://Mystic Woods Asset/tilesets/grass.png" id="2_2e35k"]
 [ext_resource type="Texture2D" uid="uid://dstj146aa5p08" path="res://Mystic Woods Asset/objects/objects.png" id="3_82npp"]
+[ext_resource type="PackedScene" uid="uid://diytk56lk0sog" path="res://Scene/enemy.tscn" id="4_kvqeh"]
 [ext_resource type="PackedScene" uid="uid://dxpo6t6mj8vll" path="res://Scene/player.tscn" id="4_t3vpe"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j6ey1"]
@@ -295,3 +296,6 @@ layer_2/tile_data = PackedInt32Array(10, 2, 5, 524307, 524290, 6, 196624, 524290
 
 [node name="Player" parent="." instance=ExtResource("4_t3vpe")]
 position = Vector2(198, 193)
+
+[node name="enemy" parent="." instance=ExtResource("4_kvqeh")]
+position = Vector2(182, 144)

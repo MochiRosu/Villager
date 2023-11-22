@@ -417,6 +417,7 @@ animations = [{
 radius = 5.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 3
 script = ExtResource("1_c5ti6")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -425,6 +426,7 @@ animation = &"front_walk"
 offset = Vector2(0, -15)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 3
 y_sort_enabled = true
 position = Vector2(1, -2)
 shape = SubResource("CircleShape2D_afe87")
